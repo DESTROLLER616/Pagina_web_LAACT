@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aquamarine;
+    height: 400vh;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #F5474C;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    color: #D6070D;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.header-submenu {
+    position: relative;
+    padding: 15px 50px 0px 50px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 0px;
+}
+
+.header-submenu-contact {
+    background-color: #0752D6;
+    padding: 15px 30px 5px 30px;
+    margin-top: 7px;
+    border-radius: 5px;
+    text-justify: distribute;
+}
