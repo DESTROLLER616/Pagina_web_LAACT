@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style_index.css">
     <title>Contactos</title>
 </head>
@@ -22,7 +23,61 @@
         </header>
     </div>
     <h1>LAACT</h1>
+
+    <div class="box-map-form"> <!-- formulario de contacto y mapa -->
+        <aside class="map-box">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3735.745927763807!2d-103.36780148497026!3d20.557573909071895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842f53a773a521b9%3A0x484d57c8d183bd11!2sSello%20Rojo!5e0!3m2!1sen!2smx!4v1655740125040!5m2!1sen!2smx" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </aside>
     
+        <section class="form-box">
+            <form class="needs-validation" novalidate>
+                <div class="form-row">
+                <div class="col-md-6 mb-3">
+                          <label for="validationCustom02">Email</label>
+                          <input type="number" class="form-control" name="ID" id="validationCustom02"  placeholder="" value="" required />
+                      </div>
+                        <div class="col-md-6 mb-3">
+                          <label for="validationCustom02">Telefono</label>
+                          <input type="text" class="form-control" name="razon_social" id="validationCustom02" placeholder="" required>
+                      </div>
+                </div>
+             
+                <form class="needs-validation" novalidate>
+                <div class="form-row">
+                <div class="col-md-6 mb-3">
+                          <label for="validationCustom02">Nombre</label>
+                          <input type="text" class="form-control" name="sede_principal" id="validationCustom02" placeholder="" required>
+                      </div>
+                <div class="col-md-6 mb-3">
+                          <label for="validationCustom02">Apellidos</label>
+                          <input type="text" class="form-control" name="rfc" id="validationCustom02"  placeholder="" value="" required />
+                </div>
+                </div>
+
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required />
+                <label class="form-check-label" for="invalidCheck">
+                  Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+
+                <button class="btn btn-primary" type="submit">Registrar</button>
+                <button class="btn btn-primary" type="reset">Borrar</button>
+            </div>
+                      
+
+                    
+
+            </form>
+        </section>
+    </div>
+
+    <br>
+
     <footer>
         <center><p>® Copyright Alimentos LAACT SA de CV. Todos los derechos reservados</p></center>
         <center><p>Telefono: 3314204825</p></center>

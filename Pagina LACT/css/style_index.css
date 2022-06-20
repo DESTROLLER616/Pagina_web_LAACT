@@ -370,3 +370,21 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: #707070;
 }
+
+.map-box {
+  float: right;
+  padding-left: 70px;
+  width: 40%;
+}
+
+.form-box {
+  background-color: #ffffff;
+  width: 60%;
+  height: 350px;
+}
+
+.box-map-form {
+  background-color: #FE9C9C;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
