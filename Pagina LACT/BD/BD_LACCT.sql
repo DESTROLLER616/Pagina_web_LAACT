@@ -109,11 +109,16 @@ ALTER TABLE almacenista  ADD CONSTRAINT FK_almacenista FOREIGN KEY (id) REFERENC
 
 ALTER TABLE pedido ADD CONSTRAINT PK_pedido PRIMARY KEY (id);
 ALTER TABLE pedido ADD CONSTRAINT FK_pedido_cl FOREIGN KEY (id_cliente) REFERENCES cliente(id);
-ALTER TABLE pedido ADD CONSTRAINT FK_pedido_ FOREIGN KEY (id_cliente) REFERENCES cliente(id);
+ALTER TABLE pedido ADD CONSTRAINT FK_pedido_conductor FOREIGN KEY (id_conductor) REFERENCES conductor(id);
 
-ALTER TABLE manejo_pedido ADD CONSTRAINT PK_pedido PRIMARY KEY (id);
+ALTER TABLE manejo_pedido ADD CONSTRAINT FK_pedido FOREIGN KEY(id_pedido) REFERENCES pedido(id);
+ALTER TABLE manejo_pedido ADD CONSTRAINT FK_producto FOREIGN KEY(id_producto) REFERENCES producto (id);
 
+ALTER TABLE producto ADD CONSTRAINT PK_producto PRIMARY KEY (id);
 
+ALTER TABLE manejo_lote ADD CONSTRAINT PK_manejo_lote PRIMARY KEY(id_producto,id_lote);
+ALTER TABLE manejo_lote ADD CONSTRAINT FK_manejo_lote_p FOREIGN KEY(id_producto) REFERENCES producto(id);
+ALTER TABLE manejo_lote ADD CONSTRAINT FK_manejo lote FOREIGN KEY (id_lote) REFERENCES lote(id);
 
-
+ALTER TABLE lote ADD CONSTRAINT PK_lote PRIMARY KEY(id);
 
